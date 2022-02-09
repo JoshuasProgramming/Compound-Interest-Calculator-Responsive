@@ -95,6 +95,30 @@ body,html{
         border:none;
         border-radius:10px;
         box-shadow:3px 3px 10px black;
+
+        &:hover{
+            opacity:100%;
+            cursor:pointer;
+        }
+    }
+
+    .disabled{
+        max-width:195px;
+        min-height:50px;
+        margin:auto;
+        /*background:#52c234;*/
+        background:grey;
+        color:white;
+        opacity:80%;
+        font-size:30px;
+        border:none;
+        border-radius:10px;
+        box-shadow:3px 3px 10px black;
+
+        &:hover{
+            opacity:100%;
+            cursor:pointer;
+        }
     }
 } 
 
