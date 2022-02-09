@@ -1,0 +1,209 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/* Main content */
+body{
+    background: linear-gradient(to left, #d7d2cc, white);
+}
+
+body,html{
+    width:100%;
+    height:100%;
+
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    .text-container {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width:1000px;
+        width: calc(100% - 30px);
+        margin:0px auto;
+        /* All the text on the screen */
+        h1, h3{
+            text-align:center;
+            font-family:Tahoma, sans-serif;
+            font-size:15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 20px;
+        }
+    }
+
+}
+
+
+/**/
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width:400px;
+    width: calc(100% - 30px);
+    min-height: auto;
+    margin:auto;
+    margin-top:30px;
+    border-radius:10px;
+    box-shadow: 8px 8px 30px black;
+    padding:20px;
+    margin-bottom:20px;
+
+    .principle{
+        display:flex;
+        flex-direction: column;
+        max-width:400px;
+        width: calc(100% - 30px);
+        margin-top:5px;
+    }
+
+    .principle-input, .interest-input, .duration-input, .yearly-contributions-input, .monthly-contributions-input, .daily-contributions-input{
+        font-size:16px;
+        font-family:Tahoma, sans-serif;
+    }
+
+    .principle > *{
+        width:100%;
+        white-space: nowrap;
+        text-align:center;
+        font-size:25px;
+    }
+
+    .principle > input{
+        margin:10px 0px 0px 0px; /* top, right, down, left */
+    }
+
+    .btn-container, .output-container{
+        margin-top:25px;
+    }
+
+    .btn{
+        max-width:195px;
+        min-height:50px;
+        margin:auto;
+        background:#52c234;
+        color:white;
+        opacity:80%;
+        font-size:30px;
+        border:none;
+        border-radius:10px;
+        box-shadow:3px 3px 10px black;
+    }
+} 
+
+
+.container input{
+    border-radius:15px;
+    outline:none;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    margin: 20px 0px;
+    ul{
+        display:flex;
+        justify-content: space-between;
+        max-width:712px;
+        width: calc(100% - 50px);
+        li{
+            list-style: none;
+            margin:0px 2px; /* top-bottom, left-right*/
+            text-align:center;
+            a{
+                text-decoration: none;
+                color:rgb(29, 29, 29);
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size:0.8em;
+                opacity:75%;
+
+            }
+        }
+    }
+
+    .active{
+        color:#52c234;
+        opacity: 100%;
+        
+    }
+
+    .hover-link:hover{
+        opacity: 100%;
+    }
+}
+
+
+.light-dark-btn{
+    width:195px;
+    margin:10px 0px 0px 10px;
+    background:#52c234;
+    color:white;
+    opacity:80%;
+    font-size:30px;
+    border:none;
+    border-radius:10px;
+    box-shadow:3px 3px 10px black;
+}
+
+.light-dark-btn:hover{
+    opacity:100%;
+    cursor:pointer;
+}
+
+
+/* Dark mode settings */
+.dark-mode-background{
+    background: rgb(80, 80, 80);
+    color:white;
+    
+}
+
+.hover-link-dark{
+    color:white;
+}
+
+.light-dark-btn{
+    width:195px;
+    background:#52c234;
+    color:white;
+    opacity:80%;
+    font-size:30px;
+    border:none;
+    border-radius:10px;
+    box-shadow:3px 3px 10px black;
+}
+
+.light-dark-btn:hover{
+    opacity:100%;
+    cursor:pointer;
+}
+
+.download-area{
+    display:flex;
+    justify-content: center;
+    
+    .download-btn{
+        max-width:195px;
+        min-height:50px;
+        margin:auto;
+        background:#52c234;
+        color:white;
+        opacity:80%;
+        font-size:30px;
+        border:none;
+        border-radius:10px;
+        box-shadow:3px 3px 10px black;
+    }
+    
+    .download-btn:hover{
+        opacity:100%;
+        cursor:pointer;
+    }
+}
